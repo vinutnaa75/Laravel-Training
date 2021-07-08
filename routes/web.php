@@ -43,4 +43,5 @@ Route::post('insertion', [App\Http\Controllers\FormController::class, 'insert'])
 Route::group(['middleware' => ['auth','student']], function ()
 {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); 
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); 
 });
